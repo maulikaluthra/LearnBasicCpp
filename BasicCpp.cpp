@@ -2,8 +2,14 @@
 // c++ programming language
 
 // Include of headers to use more function that already exists
-#include <iostream>
-#include <cstring>
+// this header includes all the header files
+#include <bits/stdc++.h>
+
+using namespace std;
+//“using namespace std” means we use the namespace named std. “std” is an abbreviation for standard. 
+//If we don’t want to use this line of code, we can use the things in this namespace like this. std::cout, std::endl.
+//If this namespace is not used, then computer finds for the cout, cin and endl etc.. Computer cannot identify those and therefore it throws errors.
+
 
 // If you write your functions after the main() you need to "redefine" above it or you program won't work
 	void print42 ();
@@ -20,28 +26,28 @@
 			//Must be only one character
 			char Char;
 			// For this last one we need to add the library cstring to the code
-			std::string String;
+			string String;
 			// Can be only true or false
 			bool Bool;
 
 		// Read and print values on screen
 			// Input
-				std::cin >> Integer;
-				std::cin >> Float;
-				std::cin >> Double;
-				std::cin >> Char;
-				std::cin >> String;
+				cin >> Integer;
+				cin >> Float;
+				cin >> Double;
+				cin >> Char;
+				cin >> String;
 				// accept only 1 or 0 as input... 
 				std::cin >> Bool;
 			// Output
-				std::cout << "Output of values entered\n" << std::endl; 
-				std::cout << "Integer value:   "          << Integer << std::endl;
-				std::cout << "Float value:     "          << Float   << std::endl;
-				std::cout << "Double value:    "          << Double  << std::endl;
-				std::cout << "Character value: "          << Char    << std::endl;
-				std::cout << "String value:    "          << String  << std::endl;
-				std::cout << "Bool value:      "          << Bool    << std::endl;
-				std::cout << std::endl;
+				cout << "Output of values entered\n" << endl; 
+				cout << "Integer value:   "          << Integer << endl;
+				cout << "Float value:     "          << Float   << endl;
+				cout << "Double value:    "          << Double  << endl;
+				cout << "Character value: "          << Char    << endl;
+				cout << "String value:    "          << String  << endl;
+				cout << "Bool value:      "          << Bool    << endl;
+				cout << endl;
 
 		// You can make opearations with numeric variables such as '+' '-' '^' '%' '/'
 			// You can create a new variable or just print the operation like this
